@@ -16,6 +16,7 @@
 body{
    color: var(--primary-text-color);
 	 background-color: var(--primary-bg-color); 
+	 font-family: Roboto, sans-serif;
 }
 
 .list{
@@ -26,6 +27,9 @@ body{
 .button{
 	color: var(--primary-bg-color);
 	background-color: var(--accent-text-color);
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
 }
 
 /* .button.primary{
@@ -42,6 +46,10 @@ body{
 /* Header */
 .logo {
 	color: #000000;
+	font-family: Raleway, sans-serif;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
 }
 
 .header a,
@@ -61,6 +69,14 @@ body{
 	color: var(--title-text-color);
 }
 
+
+.site-nav .link.current {
+	color: var(--accent-text-color);
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+}
+
 .projects .link:hover,
 .projects .link:focus{
 	color: #FFFFFF;
@@ -70,18 +86,33 @@ body{
 
 .section-title{
 	color: var(--title-text-color);
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 2;
 }
 
 /* Hero */
 .hero{
 	background-color: #2F303A;
 	color: #FFFFFF;
+	text-align: center;
+}
+
+.hero-title{
+	color: #FFFFFF;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 44px;
+	line-height: 1.5;
 }
 
 
 /* Portfolio */
 .portfolio-name{
 	color: var(--primary-text-color);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.88;
 }
 
 
@@ -93,4 +124,5 @@ body{
 .footer-logo,
 .footer-link{
 	color: #FFFFFF;
+	text-decoration: none;
 }
