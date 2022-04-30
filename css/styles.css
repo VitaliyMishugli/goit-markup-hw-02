@@ -1,0 +1,96 @@
+/* Основной цвет текста #757575 */
+/* Вторичный цвет текста  #212121 */
+/* Акцент #2196F3 */
+
+/* Основной цвет фона #E5E5E5 */
+/* Акцентный цвет фона  #2F303A */
+
+:root{
+	--primary-text-color: #757575;
+	--title-text-color: #212121;
+	--accent-text-color: #2196F3;
+	--primary-bg-color: #E5E5E5;
+	--header-footer-bg-color: #2F303A;
+}
+
+body{
+   color: var(--primary-text-color);
+	 background-color: var(--primary-bg-color); 
+}
+
+.list{
+	list-style: none;
+}
+
+/* Button */
+.button{
+	color: var(--primary-bg-color);
+	background-color: var(--accent-text-color);
+}
+
+/* .button.primary{
+		color: var(--primary-bg-color);
+		background-color: var(--accent-text-color);
+}
+
+.button.secondary{
+		color: var(--accent-text-color);
+		background-color: var(--primary-bg-color);
+} */
+
+
+/* Header */
+.logo {
+	color: #000000;
+}
+
+.header a,
+.portfolio-page
+ {
+	color: var(--title-text-color);
+	text-decoration: none;
+}
+
+.header a:hover {
+	color: var(--accent-text-color);
+	cursor: pointer;
+}
+
+/* Site nav */
+.site-nav .link{
+	color: var(--title-text-color);
+}
+
+.projects .link:hover,
+.projects .link:focus{
+	color: #FFFFFF;
+	background: var(--accent-text-color);
+	cursor: pointer;
+}
+
+.section-title{
+	color: var(--title-text-color);
+}
+
+/* Hero */
+.hero{
+	background-color: #2F303A;
+	color: #FFFFFF;
+}
+
+
+/* Portfolio */
+.portfolio-name{
+	color: var(--primary-text-color);
+}
+
+
+/* Footer */
+.footer{
+	background-color: var(--header-footer-bg-color);
+}
+
+.footer-logo,
+.footer-link{
+	color: #FFFFFF;
+}
