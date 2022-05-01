@@ -2,21 +2,25 @@
 /* Вторичный цвет текста  #212121 */
 /* Акцент #2196F3 */
 
-/* Основной цвет фона #E5E5E5 */
+/* Основной цвет фона #FFFFFF */
 /* Акцентный цвет фона  #2F303A */
 
 :root{
 	--primary-text-color: #757575;
 	--title-text-color: #212121;
 	--accent-text-color: #2196F3;
-	--primary-bg-color: #E5E5E5;
+	--primary-bg-color: #FFFFFF;
 	--header-footer-bg-color: #2F303A;
 }
 
 body{
-   color: var(--primary-text-color);
-	 background-color: var(--primary-bg-color); 
-	 font-family: Roboto, sans-serif;
+    color: var(--primary-text-color);
+	background-color: var(--primary-bg-color); 
+	font-family: Roboto, sans-serif;
+}
+
+address{
+	font-style: normal;
 }
 
 .list{
@@ -27,9 +31,14 @@ body{
 .button{
 	color: var(--primary-bg-color);
 	background-color: var(--accent-text-color);
+	font-family: Roboto, sans-se;
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 1.88;
+}
+
+.button.primary:hover {
+	cursor: pointer;
 }
 
 /* .button.primary{
@@ -52,6 +61,15 @@ body{
 	line-height: 1.19;
 }
 
+.logo-web {
+	color: var(--accent-text-color);
+}
+
+.header .logo-studio:hover{
+	color: var(--title-text-color);
+	cursor: pointer;
+}
+
 .header a,
 .portfolio-page
  {
@@ -59,13 +77,18 @@ body{
 	text-decoration: none;
 }
 
-.header a:hover {
-	color: var(--accent-text-color);
+.header .header-logo:hover {
 	cursor: pointer;
 }
 
+.header .link:hover,
+.list a:hover
+{
+	color: var(--accent-text-color);
+}
+
 /* Site nav */
-.site-nav .link{
+.site-nav .link{	
 	color: var(--title-text-color);
 }
 
@@ -73,7 +96,7 @@ body{
 .site-nav .link.current {
 	color: var(--accent-text-color);
 	font-weight: 500;
-	font-size: 14px;
+	/* font-size: 14px; */
 	line-height: 1.14;
 }
 
@@ -104,8 +127,39 @@ body{
 	font-weight: 700;
 	font-size: 44px;
 	line-height: 1.5;
+	text-transform: uppercase;
 }
 
+.visually-hidden{
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+/* Features */
+.features.section-title{
+	text-transform: uppercase;
+}
+
+.features-description{
+	font-size: 14px;
+	line-height: 1.71;
+}
+
+/* Team */
+.member-position{
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.19;
+	/* text-align: center; */
+}
 
 /* Portfolio */
 .portfolio-name{
