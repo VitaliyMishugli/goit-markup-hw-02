@@ -13,6 +13,7 @@
 	--logo-text-color:#000000;
 	--primary-bg-color: #FFFFFF;
 	--header-footer-bg-color: #2F303A;
+	--team-bg-color:#F5F4FA;
 }
 
 body{
@@ -210,6 +211,10 @@ button.secondary{
 }
 
 /* Team */
+.section.team{
+	background-color: var(--team-bg-color);
+}
+
 .member-name{
 	font-weight: 500;
 	font-size: 16px;
