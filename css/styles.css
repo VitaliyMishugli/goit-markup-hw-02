@@ -7,16 +7,20 @@
 
 :root{
 	--primary-text-color: #757575;
+	--secondary-text-color: #FFFFFF;
 	--title-text-color: #212121;
 	--accent-text-color: #2196F3;
+	--logo-text-color:#000000;
 	--primary-bg-color: #FFFFFF;
 	--header-footer-bg-color: #2F303A;
 }
 
 body{
-    color: var(--primary-text-color);
+  color: var(--primary-text-color);
 	background-color: var(--primary-bg-color); 
 	font-family: Roboto, sans-serif;
+	font-size: 14px;
+	letter-spacing: 0.03em;
 }
 
 address{
@@ -29,32 +33,61 @@ address{
 
 /* Button */
 .button{
-	color: var(--primary-bg-color);
 	background-color: var(--accent-text-color);
-	font-family: Roboto, sans-se;
+	color: var(--secondary-text-color);
+	font-family: inherit;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;	
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.06em;
+}
+
+.button.order{
+	font-family: inherit;
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 1.88;
+	text-align: center;
+	letter-spacing: 0.06em;
+	color: var(--secondary-text-color);
 }
 
-.button.primary:hover {
+button:hover,
+button:focus{
 	cursor: pointer;
+	background-color: var(--accent-text-color);
 }
 
-/* .button.primary{
-		color: var(--primary-bg-color);
+button.primary{
+		color: var(--secondary-text-color);
 		background-color: var(--accent-text-color);
+		font-family: inherit;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 1.62;
+		text-align: center;
+		letter-spacing: inherit;
 }
 
-.button.secondary{
-		color: var(--accent-text-color);
-		background-color: var(--primary-bg-color);
-} */
+button.secondary{
+		font-family: inherit;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 1.62;
+		text-align: center;
+		letter-spacing: inherit;
+		color: var(--title-text-color);
+}
 
 
 /* Header */
 .logo {
-	color: #000000;
+	color: var(--logo-text-color);
 	font-family: Raleway, sans-serif;
 	font-weight: 700;
 	font-size: 26px;
@@ -90,43 +123,59 @@ address{
 /* Site nav */
 .site-nav .link{	
 	color: var(--title-text-color);
+	font-weight: 500;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
 }
 
 
 .site-nav .link.current {
 	color: var(--accent-text-color);
 	font-weight: 500;
-	/* font-size: 14px; */
+	font-size: 14px;
 	line-height: 1.14;
+	letter-spacing: 0.02em;
 }
 
 .projects .link:hover,
 .projects .link:focus{
-	color: #FFFFFF;
+	color: var(--secondary-text-color);
 	background: var(--accent-text-color);
 	cursor: pointer;
 }
 
 .section-title{
-	color: var(--title-text-color);
+	font-family: 'Roboto';
+	font-style: normal;
 	font-weight: 700;
-	font-size: 18px;
-	line-height: 2;
+	font-size: 36px;
+	line-height: 1.17;
+	letter-spacing: 0.03em;
+	color: var(--title-text-color);
+}
+
+.list a{
+	color: var(--title-text-color);
+	font-weight: 500;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
 }
 
 /* Hero */
 .hero{
-	background-color: #2F303A;
-	color: #FFFFFF;
+	background-color: var(--header-footer-bg-color);
+	color: var(--secondary-text-color);
 	text-align: center;
 }
 
 .hero-title{
-	color: #FFFFFF;
+	color: var(--secondary-text-color);
 	font-style: normal;
-	font-weight: 700;
+	font-weight: 900;
 	font-size: 44px;
-	line-height: 1.5;
+	line-height: 1.36;
+	text-align: center;
+	letter-spacing: 0.06em;
 	text-transform: uppercase;
 }
 
@@ -145,7 +194,14 @@ address{
 
 /* Features */
 .features.section-title{
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
 	text-transform: uppercase;
+	color: var(--title-text-color);
 }
 
 .features-description{
@@ -154,11 +210,20 @@ address{
 }
 
 /* Team */
+.member-name{
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.19;
+	letter-spacing: 0.03em;
+	color: var(--title-text-color);
+}
+
 .member-position{
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.19;
-	/* text-align: center; */
+	letter-spacing: 0.03em;
+	color: var(--primary-text-color);
 }
 
 /* Portfolio */
@@ -175,8 +240,23 @@ address{
 	background-color: var(--header-footer-bg-color);
 }
 
-.footer-logo,
-.footer-link{
-	color: #FFFFFF;
+.footer-logo{
+	color: var(--secondary-text-color);
 	text-decoration: none;
+}
+
+a.footer-address {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	color: var(--secondary-text-color);
+}
+
+a.footer-link{
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	color: var(--primary-text-color);
 }
